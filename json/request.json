@@ -1,0 +1,21 @@
+{
+  "flightWay": "Oneway",
+  "classType": "ALL",
+  "hasChild": false,
+  "hasBaby": false,
+  "searchIndex": 1,
+  "date": "2020-04-04",
+  "airportParams": [
+    {
+      "dcity": "CAN",
+      "acity": "BJS",
+      "dcityname": "广州",
+      "acityname": "北京",
+      "date": "2020-04-04",
+      "dcityid": 32,
+      "acityid": 1
+    }
+  ],
+  "token": "087ba37acee531d4779ee8dd39ec401b"
+}
+
