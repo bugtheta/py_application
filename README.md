@@ -33,7 +33,7 @@ _[p23_work_to_art.py](./p23_words_to_art.py)_
 
 Group the words into some shape.
 
-![example](./pic/case3_sample_0.png){:height="50%" width="50%"}
+<img src="./pic/case3_sample_0.png" height="300" width="300" title="example of words"> 
 
 
 
