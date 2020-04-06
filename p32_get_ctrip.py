@@ -1,4 +1,3 @@
-# work with header
 import requests
 import json
 import pandas as pd
@@ -27,13 +26,20 @@ def make_request(dep_city='bjs',
     '''
 
     # 定义访问相关参数
-    referer = 'https://flights.ctrip.com/'
     api_url = 'https://flights.ctrip.com/itinerary/api/12808/products'
     headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36"
-                      " (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
-        "Referer": referer,
-        "Content-Type": "application/json",  # 声明文本类型为 json 格式
+        'authority': 'flights.ctrip.com',
+        'method': 'POST',
+        'path': '/itinerary/api/12808/products',
+        'scheme': 'https',
+        'accept': '*/*',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'zh-CN,zh;q=0.9',
+        'content-length': '223',
+        'content-type': 'application/json',
+        'origin': 'https://flights.ctrip.com',
+        'referer': 'https://flights.ctrip.com/itinerary/oneway/bjs-sha?date=2019-02-11',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
     }
 
     this_date = str(pd.to_datetime(date).date())
